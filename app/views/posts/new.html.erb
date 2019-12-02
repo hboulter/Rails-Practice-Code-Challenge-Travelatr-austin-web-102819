@@ -1,0 +1,22 @@
+<%= form_with model: @post do |f| %>
+    
+    <%= f.label "Blogger: " %>
+    <%= f.collection_select :blogger_id, @bloggers, :id, :name %>
+    
+    <%= f.label "Destination: " %>
+    <%= f.collection_select :destination_id, @destinations, :id, :name %>
+
+    <%= f.label "Title: " %>
+    <%= f.text_field :title %>
+
+    <%= f.label "Content: " %>
+    <%= f.text_field :content %>
+
+    <%= f.submit %>
+
+<% end %>
+  
+    
+  
+  
+  

@@ -1,0 +1,5 @@
+<h1><%= @post.title %></h1>
+<%= link_to "Author", @post.blogger %><br>
+<%= link_to "Destination", @post.destination %><br>
+<%= @post.content %><br>
+<%= button_to "Like", @likes, method: :update %>
